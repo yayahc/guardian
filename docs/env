@@ -1,0 +1,6 @@
+
+BOT_TOKEN=***
+TELEGRAM_BOT_API_BAS_URL=https://api.telegram.org/bot
+
+# can be superchat id if group turned to supergroup
+CHAT_ID=-100**

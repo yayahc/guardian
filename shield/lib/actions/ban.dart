@@ -1,0 +1,1 @@
+// ban a user for sending inapropiate messgaes

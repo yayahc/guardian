@@ -1,5 +1,16 @@
-import 'package:shield/shield.dart' as shield;
+import 'dart:async';
+import 'dart:io';
+import 'package:shelf/shelf.dart';
+import 'package:shelf/shelf_io.dart' as shelf_io;
+import 'package:shield/shield.dart';
 
-void main(List<String> arguments) {
-  print('Hello world: ${shield.calculate()}!');
+void main() async {
+  final FutureOr<Response> Function(Request) handler = const Pipeline()
+      .addMiddleware(logRequests())
+      .addHandler(UpdateWebhook.listen);
+
+  HttpServer server = await shelf_io.serve(handler, 'localhost', 8282);
+  server.autoCompress = true;
+
+  print('Serving at http://${server.address.host}:${server.port}');
 }

@@ -9,6 +9,8 @@ environment:
 # Add regular dependencies here.
 dependencies:
   dotenv: ^4.2.0
+  http: ^1.6.0
+  shelf: ^1.4.2
   # path: ^1.8.0
 
 dev_dependencies:
