@@ -9,7 +9,7 @@ void main() async {
       .addMiddleware(logRequests())
       .addHandler(UpdateWebhook.listen);
 
-  HttpServer server = await shelf_io.serve(handler, 'localhost', 8080);
+  HttpServer server = await shelf_io.serve(handler, '0.0.0.0', 8080);
   server.autoCompress = true;
 
   print('Serving at http://${server.address.host}:${server.port}');
