@@ -7,7 +7,7 @@ feat:
 setup:
 - add shield bot to your groupe 
 - give admin permission
-- set whebhook that will receive updates (your server link basicaly)
+- set whebhook that will receive updates ([your server link basicaly](/docs/webhook.md))
 - on .env add required envs (see [env](./docs/env))
 - start shield
 
