@@ -10,7 +10,7 @@ void deleteMessage(int messageId) async {
   final String compose =
       "$baseUrl$botToken/deleteMessage?chat_id=$chatId&message_id=$messageId";
   final Response response = await Client().post(Uri.parse(compose));
-  if (response.statusCode == 200) {
+  if (response.statusCode != 200) {
     sendMessage("Can't delete a message\nID: $messageId");
   }
 }
