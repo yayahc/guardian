@@ -1,5 +1,5 @@
 A telegram [bot](https://core.telegram.org/bots/api) to ban user and remove messages  
-test: join [test-group](https://t.me/test_shield) then try to send 'crypto' or 'sex' in the chat (see [demo](./demo/demo.mov))
+test: join [test-group](https://t.me/test_shield) then try to send 'crypto' or 'sex' in the chat (see [demo](./demo/demo.mp4))
 
 feat:
 - receive upddate form telegram webhook for all messgae sned in the chat then delete inapropriate messages
