@@ -15,5 +15,7 @@ todo:
 currently basic poc feel free to [pr](https://github.com/yayahc/shield/pulls)
 - [ ] code refactoring
 - [ ] better docs
+- [ ] inappropriate messgae detection
+- [ ] add more actions
 - [ ] add ban user feat
 - [ ] deploy
