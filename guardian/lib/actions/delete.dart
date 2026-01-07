@@ -1,5 +1,5 @@
-import 'package:shield/actions/send.dart';
-import 'package:shield/config/init.dart';
+import 'package:guardian/actions/send.dart';
+import 'package:guardian/config/init.dart';
 import 'package:http/http.dart';
 
 // delete inapropriate message

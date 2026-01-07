@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:http/http.dart';
-import 'package:shield/config/init.dart';
+import 'package:guardian/config/init.dart';
 
 class KeepAlive {
   static Future<void> run() async {

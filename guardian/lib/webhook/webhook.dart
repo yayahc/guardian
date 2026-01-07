@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:shelf/shelf.dart';
-import 'package:shield/actions/delete.dart';
-import 'package:shield/config/bad_messages.dart';
-import 'package:shield/models/models.dart';
+import 'package:guardian/actions/delete.dart';
+import 'package:guardian/config/bad_messages.dart';
+import 'package:guardian/models/models.dart';
 
 // listen for incoming updates via an outgoing webhook
 class UpdateWebhook {

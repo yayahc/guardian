@@ -5,14 +5,14 @@ feat:
 - receive upddate form telegram webhook for all messgae sned in the chat then delete inapropriate messages
 
 setup:
-- add shield bot to your groupe 
+- add guardian bot to your groupe 
 - give admin permission
 - set whebhook that will receive updates ([your server link basicaly](/docs/webhook.md))
 - on .env add required envs (see [env](./docs/env))
-- start shield
+- start guardian
 
 todo:
-currently basic poc feel free to [pr](https://github.com/yayahc/shield/pulls)
+currently basic poc feel free to [pr](https://github.com/yayahc/guardian/pulls)
 - [ ] code refactoring
 - [ ] better docs
 - [ ] inappropriate messgae detection
