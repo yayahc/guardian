@@ -4,9 +4,9 @@ import 'package:http/http.dart';
 import 'package:guardian/config/init.dart';
 
 class KeepAlive {
-  static Future<void> run() async {
-    Timer.periodic(Duration(minutes: 14), (timer) async {
-      await Client().get(Uri.parse(Init.dotEnv['SERVER_URL']));
+  static void run() {
+    Timer.periodic(Duration(minutes: 10), (timer) async {
+      Client().get(Uri.parse(Init.dotEnv['SERVER_URL']));
     });
   }
 }

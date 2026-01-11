@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:guardian/guardian.dart';
+import 'package:guardian/services/keep_alive.dart';
 import 'package:shelf/shelf.dart';
 import 'package:shelf/shelf_io.dart' as shelf_io;
 
@@ -13,4 +14,5 @@ void main() async {
   server.autoCompress = true;
 
   print('Serving at http://${server.address.host}:${server.port}');
+  KeepAlive.run();
 }
