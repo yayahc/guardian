@@ -1,1 +1,1 @@
-List<String> badMessages = <String>['sex', 'crypto'];
+List<String> badMessages = <String>['sex', 'crypto', 'hot'];
